@@ -83,7 +83,7 @@ export function ValuePropSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, type: "spring", stiffness: 100 }}
           >
-            <motion.div className="relative w-full aspect-video overflow-hidden" animate={{ y: [0, -8, 0] }} transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}>
+            <motion.div className="relative h-32 sm:h-40 md:h-48 lg:h-52 overflow-hidden" animate={{ y: [0, -8, 0] }} transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}>
               <img
                 src={tenantImg}
                 alt="Tenants finding a room"
@@ -131,7 +131,7 @@ export function ValuePropSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, type: "spring", stiffness: 100 }}
           >
-            <motion.div className="relative w-full aspect-video overflow-hidden" animate={{ y: [0, -8, 0] }} transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}>
+            <motion.div className="relative h-32 sm:h-40 md:h-48 lg:h-52 overflow-hidden" animate={{ y: [0, -8, 0] }} transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}>
               <img
                 src={landlordImg}
                 alt="Landlords listing property"

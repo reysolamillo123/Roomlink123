@@ -1,4 +1,5 @@
 import { ArrowRight, Twitter, Instagram, Linkedin, Github } from "lucide-react";
+import { motion } from "framer-motion";
 import roomlinkLogo from "../../assets/roomlink1.png";
 
 const footerLinks = {

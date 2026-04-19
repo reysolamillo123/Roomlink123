@@ -34,7 +34,7 @@ export function HeroSection() {
     },
   };
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-sky-100 to-sky-50 pt-16">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-sky-100 to-sky-50 pt-16" id="hero">
       <div className="relative z-20 max-w-7xl mx-auto px-6 lg:px-8 w-full py-20 lg:py-0">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 

@@ -1,5 +1,5 @@
 node_modules/
-dist/
+# dist/ - commented out to allow GitHub Pages deployment
 build/
 .DS_Store
 .env
