@@ -81,7 +81,7 @@ export function AppCarousel() {
 
   return (
     <motion.section
-      className="py-24 bg-slate-950"
+      className="py-24 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
@@ -118,7 +118,7 @@ export function AppCarousel() {
             Your journey to the perfect room
           </motion.h2>
           <motion.p
-            className="text-slate-400 mt-4 max-w-xl mx-auto"
+            className="text-slate-300 mt-4 max-w-xl mx-auto"
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -174,7 +174,7 @@ export function AppCarousel() {
                   {slide.title}
                 </h3>
                 <p
-                  className="text-slate-400 mb-8"
+                  className="text-slate-300 mb-8"
                   style={{ fontFamily: "Inter, sans-serif", fontSize: "1rem", lineHeight: 1.75 }}
                 >
                   {slide.description}
@@ -222,26 +222,26 @@ export function AppCarousel() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2, type: "spring", stiffness: 80 }}
           >
-            {/* Phone frame with gradient border */}
+            {/* Phone frame with subtle border */}
             <motion.div 
-              className="relative w-65 rounded-4xl shadow-2xl overflow-hidden" 
+              className="relative w-65 rounded-4xl shadow-2xl overflow-hidden border-8 border-slate-800" 
               style={{ 
                 height: "550px",
-                background: "linear-gradient(135deg, #ff4444 0%, #ff6b35 25%, #ff8c00 50%, #ffc300 75%, #ffed4e 100%)",
-                padding: "6px"
+                background: "transparent",
+                padding: "0"
               }}
               animate={{
                 y: [0, -12, 0],
                 boxShadow: [
-                  "0 20px 40px rgba(255, 68, 68, 0.2)",
-                  "0 35px 70px rgba(255, 107, 53, 0.35)",
-                  "0 20px 40px rgba(255, 68, 68, 0.2)"
+                  "0 20px 50px rgba(15, 23, 42, 0.4)",
+                  "0 35px 80px rgba(15, 23, 42, 0.6)",
+                  "0 20px 50px rgba(15, 23, 42, 0.4)"
                 ]
               }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             >
               {/* Black frame */}
-              <div className="w-full h-full bg-black rounded-3xl overflow-hidden p-1.5">
+              <div className="w-full h-full bg-black rounded-3xl overflow-hidden">
                 {/* Inner phone frame */}
                 <div className="w-full h-full bg-white rounded-3xl overflow-hidden relative flex flex-col">
                   {/* Screen content - Image fills entire area */}
@@ -263,9 +263,9 @@ export function AppCarousel() {
               </div>
             </motion.div>
 
-            {/* Glow */}
+            {/* Glow - subtle blue accent */}
             <motion.div
-              className="absolute inset-0 -z-10 bg-gradient-to-r from-orange-500/20 via-yellow-500/20 to-red-500/20 blur-3xl rounded-full w-96 h-96"
+              className="absolute inset-0 -z-10 bg-gradient-to-r from-sky-500/10 via-blue-500/10 to-sky-500/10 blur-3xl rounded-full w-96 h-96"
               animate={{ scale: [1, 1.1, 1] }}
               transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
             />

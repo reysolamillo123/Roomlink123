@@ -64,7 +64,7 @@ export function ValuePropSection() {
             Whether you're renting or listing
           </motion.h2>
           <p
-            className="text-slate-500 mt-4 max-w-lg mx-auto"
+            className="text-slate-700 mt-4 max-w-lg mx-auto"
             style={{ fontFamily: "Inter, sans-serif", fontSize: "1rem", lineHeight: 1.7 }}
           >
             RoomLink is designed to deliver value on both sides of the marketplace — making every transaction smoother and more transparent.
@@ -102,7 +102,7 @@ export function ValuePropSection() {
                 Find your ideal space
               </h3>
               <p
-                className="text-slate-500 mt-2"
+                className="text-slate-700 mt-2"
                 style={{ fontFamily: "Inter, sans-serif", fontSize: "0.9rem", lineHeight: 1.65 }}
               >
                 Discover rooms that match your lifestyle, budget, and location — and book with confidence knowing every listing is verified.
@@ -150,7 +150,7 @@ export function ValuePropSection() {
                 Fill vacancies with ease
               </h3>
               <p
-                className="text-slate-500 mt-2"
+                className="text-slate-700 mt-2"
                 style={{ fontFamily: "Inter, sans-serif", fontSize: "0.9rem", lineHeight: 1.65 }}
               >
                 List your property in minutes and connect with pre-verified tenants. Manage everything from one powerful dashboard.
@@ -158,7 +158,7 @@ export function ValuePropSection() {
               <BenefitList items={landlordBenefits} color="bg-slate-700" />
               <motion.a
                 href="#"
-                className="inline-flex items-center gap-2 mt-7 bg-slate-900 hover:bg-slate-700 text-white px-6 py-2.5 rounded-full transition-all duration-200 hover:shadow-lg"
+                className="inline-flex items-center gap-2 mt-7 bg-sky-500 hover:bg-sky-600 text-white px-6 py-2.5 rounded-full transition-all duration-200 hover:shadow-lg"
                 whileHover={{ scale: 1.08, y: -3 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 100 }}

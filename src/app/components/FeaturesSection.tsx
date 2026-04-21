@@ -129,7 +129,7 @@ export function FeaturesSection() {
           </motion.h2>
 
           <motion.p
-            className="text-slate-600 text-lg"
+            className="text-slate-700 text-lg"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -193,21 +193,25 @@ export function FeaturesSection() {
 
                     {/* Description */}
                     <p
-                      className="text-slate-600 text-sm leading-relaxed mb-5"
+                      className="text-slate-700 text-sm leading-relaxed mb-5"
                       style={{ fontFamily: "Inter, sans-serif", fontSize: "0.9rem" }}
                     >
                       {feature.description}
                     </p>
 
                     {/* Learn More Link */}
-                    <motion.div
-                      className="flex items-center gap-2 text-slate-600 font-semibold group/link cursor-pointer mt-auto"
-                      whileHover={{ x: 6 }}
-                      transition={{ type: "spring", stiffness: 200 }}
+                    <motion.a
+                      href="#"
+                      onClick={handleScrollToHero}
+                      className="inline-flex items-center gap-2 mt-7 bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-full transition-all duration-200 hover:shadow-lg"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      transition={{ type: "spring", stiffness: 100 }}
+                      style={{ fontFamily: "Inter, sans-serif", fontWeight: 600, fontSize: "0.85rem" }}
                     >
-                      <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.85rem" }}>Learn More</span>
-                      <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
-                    </motion.div>
+                      Learn More
+                      <ArrowRight size={14} />
+                    </motion.a>
                   </div>
 
                   {/* Hover overlay */}

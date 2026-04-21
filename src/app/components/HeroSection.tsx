@@ -67,14 +67,14 @@ export function HeroSection() {
                 letterSpacing: "-0.02em",
               }}
             >
-              Find Your Perfect{" "}
-              <span className="text-sky-500">Space</span>
-              {" "}with RoomLink
+              Find Verified Spaces and Trusted{" "}
+              <span className="text-sky-500">Landlords</span>
+              {" "}, All-In-One
             </motion.h1>
 
             {/* Subtext */}
             <motion.p
-              className="text-slate-500 mb-8 max-w-md"
+              className="text-slate-700 mb-8 max-w-md"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -117,17 +117,17 @@ export function HeroSection() {
             <div className="mt-10 flex items-center gap-6 pt-8 border-t border-slate-100">
               <div className="text-center">
                 <p className="text-slate-900" style={{ fontFamily: "Inter, sans-serif", fontWeight: 700, fontSize: "1.4rem" }}>50K+</p>
-                <p className="text-slate-400" style={{ fontFamily: "Inter, sans-serif", fontSize: "0.8rem", fontWeight: 500 }}>Active Listings</p>
+                <p className="text-slate-600" style={{ fontFamily: "Inter, sans-serif", fontSize: "0.8rem", fontWeight: 500 }}>Active Listings</p>
               </div>
               <div className="w-px h-10 bg-slate-100" />
               <div className="text-center">
                 <p className="text-slate-900" style={{ fontFamily: "Inter, sans-serif", fontWeight: 700, fontSize: "1.4rem" }}>98%</p>
-                <p className="text-slate-400" style={{ fontFamily: "Inter, sans-serif", fontSize: "0.8rem", fontWeight: 500 }}>Satisfaction Rate</p>
+                <p className="text-slate-600" style={{ fontFamily: "Inter, sans-serif", fontSize: "0.8rem", fontWeight: 500 }}>Satisfaction Rate</p>
               </div>
               <div className="w-px h-10 bg-slate-100" />
               <div className="text-center">
                 <p className="text-slate-900" style={{ fontFamily: "Inter, sans-serif", fontWeight: 700, fontSize: "1.4rem" }}>120+</p>
-                <p className="text-slate-400" style={{ fontFamily: "Inter, sans-serif", fontSize: "0.8rem", fontWeight: 500 }}>Cities Covered</p>
+                <p className="text-slate-600" style={{ fontFamily: "Inter, sans-serif", fontSize: "0.8rem", fontWeight: 500 }}>Cities Covered</p>
               </div>
             </div>
           </motion.div>
