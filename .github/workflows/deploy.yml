@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build and Deploy to GitHub Pages
 
 on:
   push:
@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
           
@@ -22,15 +22,9 @@ jobs:
       - name: Build project
         run: npm run build
         
-      - name: Commit dist changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add dist
-          git commit -m "Auto-build: update dist folder" || echo "No changes to commit"
-          
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+          publish_dir: ./dist
+          cname: false
